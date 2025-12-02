@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>موقع يا زعيم — Mahmoud Emam</title>
+  <meta name="description" content="موقع شخصي بسيط باسم يا زعيم (Mahmoud Emam). صفحة سيرة ذاتية، معرض، وتواصل." />
+  <style>
+    :root{--bg:#0f1724;--card:#111827;--accent:#06b6d4;--muted:#9ca3af;color-scheme:dark}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,"Noto Naskh Arabic",sans-serif;background:linear-gradient(180deg,var(--bg),#061226);color:#e6eef6;line-height:1.5}
+    .container{max-width:980px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:#042027;text-decoration:none;font-weight:600}
+    .meta{color:var(--muted);font-size:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+    .skill{padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03)}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+    @media(min-width:760px){.grid{grid-template-columns:1fr 320px}}
+    /* simple gallery */
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    form label{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+    form input,form textarea{width:100%;padding:10px;margin-top:6px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+  </style>
+</head>
+<body>
+  <!--
+    تعليمات بسيطة:
+    1) احفظ هذا الملف باسم `index.html` وارفعه على أي استضافة (GitHub Pages, Netlify, Vercel) أو افتحه محلياً.
+    2) لتعديل الاسم أو النصوص ابحث عن "يا زعيم" أو "Mahmoud Emam" واستبدلها.
+    3) النموذج هنا غير مفعل؛ لربطه فعلياً استخدم خدمة Formspree أو Netlify Forms أو أضف endpoint خاص.
+  -->
+  <div class="container">
+    <header>
+      <div class="avatar">يا
+        <span style="margin-right:6px">زعيم</span>
+      </div>
+      <div>
+        <h1>يا زعيم — Mahmoud Emam</h1>
+        <p class="lead">موقع شخصي بسيط لعرض خدماتك، معرض أعمال، وطريقة تواصل سريعة.</p>
+        <div class="meta">موقع مُعد تلقائياً — جاهز للنشر</div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>نبذة عني</h2>
+        <p>السلام عليكم، أنا يا زعيم (Mahmoud Emam). هذه صفحة تعريفية قصيرة قابلة للتعديل — أضف هنا وصف مختصر عن نفسك، خدماتك، أو ما تريد أن يراه الزوار.</p>
+
+        <h3 style="margin-top:12px">خدمات</h3>
+        <div class="skills">
+          <span class="skill">تصميم</span>
+          <span class="skill">تسويق</span>
+          <span class="skill">تصوير</span>
+          <span class="skill">متجر إلكترونى</span>
+        </div>
+
+        <h3 style="margin-top:14px">معرض أعمال</h3>
+        <div class="gallery">
+          <img src="https://via.placeholder.com/400x300?text=عمل+1" alt="عمل 1">
+          <img src="https://via.placeholder.com/400x300?text=عمل+2" alt="عمل 2">
+          <img src="https://via.placeholder.com/400x300?text=عمل+3" alt="عمل 3">
+        </div>
+
+        <h3 style="margin-top:14px">اتصل بيا</h3>
+        <form action="#" onsubmit="alert('النموذج لا يرسل — ربطه بخدمة بريدية عبر التعليمات في أعلى الصفحة.');return false;">
+          <label>الاسم</label>
+          <input type="text" placeholder="اسمك" />
+          <label>البريد الإلكترونى</label>
+          <input type="email" placeholder="email@example.com" />
+          <label>رسالتك</label>
+          <textarea rows="4" placeholder="اشرح ماذا تحتاج..."></textarea>
+          <div style="margin-top:10px"><button class="btn" type="submit">أرسل</button></div>
+        </form>
+      </section>
+
+      <aside class="card">
+        <h3>معلومات سريعة</h3>
+        <p class="meta">الاسم: <strong>يا زعيم</strong></p>
+        <p class="meta">الاسم بالإنجليزى: <strong>Mahmoud Emam</strong></p>
+        <p class="meta">الوظيفة: <strong>محتوى / خدمات</strong></p>
+
+        <h4 style="margin-top:12px">روابط سريعة</h4>
+        <p><a class="btn" href="#">تحميل السيرة الذاتية</a></p>
+
+        <h4 style="margin-top:12px">نصائح نشر</h4>
+        <ul style="color:var(--muted);padding-left:18px">
+          <li>احفظ الملف باسم <code>index.html</code>.</li>
+          <li>ارفعه لـ GitHub وفعّل GitHub Pages لعرض مجانياً.</li>
+          <li>أو ارفع المجلد على Netlify / Vercel لسيرفر سريع مع دعم SSL.</li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> يا زعيم — تم إنشاء الموقع تلقائيًا. للتعديلات اطلب مني تعديل المحتوى أو التصميم.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
